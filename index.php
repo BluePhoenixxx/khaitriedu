@@ -28,7 +28,7 @@ include('includes/config.php');
     <!-- Navigation -->
    <?php include('includes/header.php');
         include('includes/banner.php');
-        include('includes/two_column.php');
+//         include('includes/two_column.php');
         include('includes/card_wrapper.php');
         include('includes/card_wrapper1.php');
         include('includes/card_wrapper2.php');
