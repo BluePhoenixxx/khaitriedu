@@ -7,7 +7,7 @@ if(isset($_POST['login']))
   {
  
     // Getting username/ email and password
-     $uname=$_POST['username'];
+    $uname=$_POST['username'];
     $password=md5($_POST['password']);
     // Fetch data from database on the basis of username/email and password
 $sql =mysqli_query($con,"SELECT AdminUserName,AdminEmailId,AdminPassword,userType FROM tbladmin WHERE (AdminUserName='$uname' && AdminPassword='$password')");
@@ -64,7 +64,7 @@ echo "<script>alert('Invalid Details');</script>";
                             <div class="m-t-40 account-pages">
                                 <div class="text-center account-logo-box">
                                     <h2 class="text-uppercase">
-                                        <a href="index.html" class="text-success">
+                                        <a href="index.php" class="text-success">
                                             <span><img src="assets/images/logo.ico" alt="" height="56"></span>
                                         </a>
                                     </h2>

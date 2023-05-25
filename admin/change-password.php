@@ -18,7 +18,7 @@ $adminid=$_SESSION['login'];
 $newpassword=$_POST['newpassword'];
 $newhashedpass=password_hash($newpassword, PASSWORD_BCRYPT, $options);
 
-date_default_timezone_set('Asia/Kolkata');// change according timezone
+date_default_timezone_set('Asia/Ho_Chi_Minh');
 $currentTime = date( 'd-m-Y h:i:s A', time () );
 $sql=mysqli_query($con,"SELECT AdminPassword FROM  tbladmin where AdminUserName='$adminid' || AdminEmailId='$adminid'");
 $num=mysqli_fetch_array($sql);
@@ -27,9 +27,8 @@ if($num>0)
  $dbpassword=$num['AdminPassword'];
 
 if (password_verify($password, $dbpassword)) {
-
- $con=mysqli_query($con,"update tbladmin set AdminPassword='$newhashedpass', updationDate='$currentTime' where AdminUserName='$adminid'");
-$msg="Password Changed Successfully !!";
+    $con=mysqli_query($con,"update tbladmin set AdminPassword='$newhashedpass', updationDate='$currentTime' where AdminUserName='$adminid'");
+    $msg="Password Changed Successfully !!";
 }
 }
 else
@@ -46,7 +45,7 @@ $error="Old Password not match !!";
 <html lang="en">
     <head>
 
-        <title>KhaiTriEdu | Add Category</title>
+        <title>KhaiTriEdu | Change password</title>
 
         <!-- App css -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -203,20 +202,7 @@ return true;
 
 	                                        </form>
                         				</div>
-
-
                         			</div>
-
-
-                        			
-
-
-
-
-           
-                       
-
-
                                 </div>
                             </div>
                         </div>

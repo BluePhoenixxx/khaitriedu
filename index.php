@@ -1,8 +1,7 @@
 <?php 
 session_start();
 include('includes/config.php');
-
-    ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,15 +19,22 @@ include('includes/config.php');
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="./images/logo-icon.ico" type="image/icon type">
     <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet">
-
+    <link href="/css/modern-business.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/add.css">
   </head>
 
   <body>
 
     <!-- Navigation -->
-   <?php include('includes/header.php');?>
-
+   <?php include('includes/header.php');
+        include('includes/banner.php');
+        include('includes/two_column.php');
+        include('includes/card_wrapper.php');
+        include('includes/card_wrapper1.php');
+        include('includes/card_wrapper2.php');
+       
+    ?>
+  
     <!-- Page Content -->
     <div class="container">
 
@@ -85,7 +91,8 @@ while ($row=mysqli_fetch_array($query)) {
 
 
     <ul class="pagination justify-content-center mb-4">
-        <li class="page-item"><a href="?pageno=1"  class="page-link">First</a></li>
+        <li class="page-item">
+          <a href="?pageno=1"  class="page-link">First</a></li>
         <li class="<?php if($pageno <= 1){ echo 'disabled'; } ?> page-item">
             <a href="<?php if($pageno <= 1){ echo '#'; } else { echo "?pageno=".($pageno - 1); } ?>" class="page-link">Prev</a>
         </li>
@@ -106,15 +113,19 @@ while ($row=mysqli_fetch_array($query)) {
     <!-- /.container -->
 
     <!-- Footer -->
-      <?php include('includes/footer.php');?>
-
+    <?php
+    include('includes/connect_us.php');
+    include('includes/footer.php');
+?>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    
  
 </head>
   </body>
 
 </html>
+
+

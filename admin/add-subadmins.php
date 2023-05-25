@@ -107,15 +107,6 @@ error:function (){}
                                 <div class="card-box">
                                     <h4 class="m-t-0 header-title"><b>Add Subadmin </b></h4>
                                     <hr />
-                        		
-
-
-
-
-
-
-
-
                         			<div class="row">
                         				<div class="col-md-6">
 <form class="form-horizontal" name="addsuadmin" method="post">
@@ -143,23 +134,9 @@ error:function (){}
        Submit</button>
                                                     </div>
                                                 </div>
-
 	                                        </form>
                         				</div>
-
-
                         			</div>
-
-
-                        			
-
-
-
-
-           
-                       
-
-
                                 </div>
                             </div>
                         </div>
