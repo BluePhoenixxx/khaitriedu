@@ -159,7 +159,7 @@ while($result=mysqli_fetch_array($ret))
 	                                            <div class="form-group">
 	                                                <label class="col-md-2 control-label">Sub-Category Description</label>
 	                                                <div class="col-md-10">
-	                                                    <textarea class="form-control" rows="5" name="sucatdescription" required></textarea>
+	                                                    <textarea class="form-control" rows="5" name="sucatdescription" ></textarea>
 	                                                </div>
 	                                            </div>
 

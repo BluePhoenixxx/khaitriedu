@@ -36,7 +36,17 @@ $imgnewfile=md5($imgfile).$extension;
 move_uploaded_file($_FILES["postimage"]["tmp_name"],"postimages/".$imgnewfile);
 
 $status=1;
-$query=mysqli_query($con,"insert into tblposts(PostTitle,CategoryId,SubCategoryId,PostDetails,PostUrl,Is_Active,PostImage,postedBy) values('$posttitle','$catid','$subcatid','$postdetails','$url','$status','$imgnewfile','$postedby')");
+
+
+if  (isset($subcatid))
+{
+    $query=mysqli_query($con,"insert into tblposts(PostTitle,CategoryId,SubCategoryId,PostDetails,PostUrl,Is_Active,PostImage,postedBy) values('$posttitle','$catid','$subcatid','$postdetails','$url','$status','$imgnewfile','$postedby')");
+}
+else 
+{
+    $query=mysqli_query($con,"insert into tblposts(PostTitle,CategoryId,PostDetails,PostUrl,Is_Active,PostImage,postedBy) values('$posttitle','$catid','$postdetails','$url','$status','$imgnewfile','$postedby')");
+}
+
 if($query)
 {
 $msg="Post successfully added ";
@@ -189,7 +199,7 @@ while($result=mysqli_fetch_array($ret))
     
 <div class="form-group m-b-20">
 <label for="exampleInputEmail1">Sub Category</label>
-<select class="form-control" name="subcategory" id="subcategory" required>
+<select class="form-control" name="subcategory" id="subcategory" >
 
 </select> 
 </div>
@@ -199,7 +209,7 @@ while($result=mysqli_fetch_array($ret))
 <div class="col-sm-12">
  <div class="card-box">
 <h4 class="m-b-30 m-t-0 header-title"><b>Post Details</b></h4>
-<textarea class="summernote" name="postdescription" required></textarea>
+<textarea class="summernote" name="postdescription" ></textarea>
 </div>
 </div>
 </div>
@@ -296,9 +306,6 @@ while($result=mysqli_fetch_array($ret))
 
         <!--Summernote js-->
         <script src="../plugins/summernote/summernote.min.js"></script>
-
-    
-
 
     </body>
 </html>

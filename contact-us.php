@@ -11,8 +11,8 @@ include('includes/config.php');
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>News Portal | Contact us</title>
+  
+    <title>IIN TỨC ĐÀO TẠO</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
