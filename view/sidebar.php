@@ -11,7 +11,6 @@
                 <span class="input-group-btn">
                   <button class="btn btn-secondary" type="submit">Go!</button>
                 </span>
-              </form>
               </div>
             </div>
           </div>

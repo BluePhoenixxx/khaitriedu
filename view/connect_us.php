@@ -8,7 +8,7 @@
 
         <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
         <div class="">
-            <div >thông tin liên hệ</div>
+        <a class=" title" href="../controller/index.php?quanly=lienhe">THÔNG TIN LIÊN HỆ</a>
             <div class="row">
                 <div class="col col-md-6">
                     <h5 class="edit-left">
@@ -125,7 +125,7 @@
         padding-left: 40px;
     }
     .my-element{
-    height: 626px;
+    height: 100%;
     width: 1100px;
     font-size: 24px;
     padding-left: 151px;
@@ -152,5 +152,8 @@
     }  
     .icon{
         padding-left: 180px;
+    }
+    a{
+        text-decoration: none;
     }
 </style> 

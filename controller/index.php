@@ -37,6 +37,12 @@ include('../model/config.php');
             case 'dangky':
               include('dang_ky.php');
               break;
+            case 'lienhe':
+              include('lien_he.php');
+              break;
+            case 'danhmuctintuccon':
+              include('subcategory.php');
+              break;
             default:
               include('home.php');
               break;
@@ -57,3 +63,12 @@ include('../model/config.php');
 </html>
 
 
+<style>
+  body{
+    overflow-x:hidden;
+  }
+  a:visited{
+    color:black;
+    font-weight: bold; 
+  }
+</style>
