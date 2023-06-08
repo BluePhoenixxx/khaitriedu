@@ -19,8 +19,8 @@
 
     <main role="main">
         <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
-        <div class="container3 mt-2">
-            <h1 class="text-center">THÔNG TIN LIÊN HỆ</h1>
+        <div class="container3 mt-2 ">
+            <a class="text-center title">THÔNG TIN LIÊN HỆ</a>
             <div class="row">
                 <div class="col col-md-6">
                     <h5 class="edit-left">
@@ -68,7 +68,6 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31397.421943973415!2d105.439712!3d10.367631000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a731b04c15e0f%3A0x572c0af7be1e4354!2zMjIzIFVuZyBWxINuIEtoacOqbSwgUC4gTeG7uSBQaMaw4bubYywgVGjDoG5oIHBo4buRIExvbmcgWHV5w6puLCBBbiBHaWFuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sus!4v1685258940998!5m2!1svi!2sus" width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                    
-                   
                 </div> 
               
                 
@@ -105,7 +104,6 @@
     
     .container3{
         background-color: #EEEEEE !important;
-       
     }
     .row{
         margin-left: -10px;
@@ -184,6 +182,24 @@
     .icon{
         padding-left: 180px;
     }
+
+    .title
+	{
+	color: #047DCE  !important;
+	text-decoration: none;
+	font-family: "Roboto", Roboto;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+    fill: #047DCE;
+    color: #047DCE;
+    background-color: #00000000;
+    border-style: double;
+    border-width: 3px 0px 3px 0px;
+    border-color: var(--e-global-color-secondary );
+    border-radius: 20px 20px 20px 20px;
+	}
     /* .sidebar {
   margin: 0;
   padding: 0;

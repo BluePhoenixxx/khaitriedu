@@ -17,7 +17,7 @@ $query_category=mysqli_query($con,"select * from tblcategory where is_menu = 1")
     <?php
        while ($row_subcategory = mysqli_fetch_array($query_subcategory)){
     ?>
-      <li><a href="../controller/index.php?quanly=subcategory&id=<?php echo $row_subcategory['SubCategoryId']?>"><?php  echo $row_subcategory['Subcategory']?></a>
+      <li><a href="../controller/index.php?quanly=danhmuctintuccon&id=<?php echo $row_subcategory['SubCategoryId']?>"><?php  echo $row_subcategory['Subcategory']?></a>
     <?php
       }
     ?>
@@ -52,7 +52,7 @@ $query_category=mysqli_query($con,"select * from tblcategory where is_menu = 1")
 
 .menu a{
   display: block;
-  padding: 10px;
+  padding: 10px;  
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-decoration: none;

@@ -3,6 +3,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.7em
+    
 }
 
 body,body .content-pusher,body #main-content,.wpcf7-form.style-01 .contact-form-content .message textarea,.wpcf7-form.style-01 .contact-form-content .email input,.wpcf7-form.style-01 .contact-form-content .subject input,.wpcf7-form.style-01 .contact-form-content .name input,.wpcf7-form.style-02 .contact-form-content .name input,.wpcf7-form.style-02 .contact-form-content .email input,.wpcf7-form.style-02 .contact-form-content .message textarea,.wpcf7-form.style-02 .contact-form-content .subject input {
